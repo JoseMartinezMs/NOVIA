@@ -154,16 +154,15 @@ background: radial-gradient(circle, rgb(255, 202, 218) 10%, rgb(255, 91, 99) 60%
     }
 
     .bateria, .piano {
-    position: relative; /* Posición relativa para la animación */
     animation: sacudir 0.5s infinite alternate; /* Animación */
 }
 
 @keyframes sacudir {
     0% {
-        transform: translateX(0); /* Comienza sin desplazamiento */
+        transform: translatey(0); /* Comienza sin desplazamiento */
     }
     100% {
-        transform: translateX(10px); /* Termina con un desplazamiento hacia la derecha */
+        transform: translatey(3px); /* Termina con un desplazamiento hacia la derecha */
     }
 }
 

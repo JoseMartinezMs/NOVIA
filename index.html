@@ -153,17 +153,17 @@ background: radial-gradient(circle, rgb(255, 202, 218) 10%, rgb(255, 91, 99) 60%
         animation: lati2 3.2s infinite;
     }
 
-    .canatnte, .guitarra {
-    position: absolute; /* Posición absoluta para animar */
-    animation: moverLadoALado 3s infinite alternate; /* Animación */
+    .bateria, .piano {
+    position: relative; /* Posición relativa para la animación */
+    animation: sacudir 0.5s infinite alternate; /* Animación */
 }
 
-@keyframes moverLadoALado {
+@keyframes sacudir {
     0% {
-        left: 0; /* Comienza desde la izquierda */
+        transform: translateX(0); /* Comienza sin desplazamiento */
     }
     100% {
-        left: calc(100% - 200px); /* Termina cerca del borde derecho */
+        transform: translateX(10px); /* Termina con un desplazamiento hacia la derecha */
     }
 }
 

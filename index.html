@@ -165,7 +165,7 @@ background: radial-gradient(circle, rgb(255, 202, 218) 10%, rgb(255, 91, 99) 60%
         transform: translatey(5px); /* Termina con un desplazamiento hacia la derecha */
     }
 }
-.guitarra, .cantante {
+.guitarra{
         animation: bailar 3s infinite alternate;
         /* Ajusta la duración y otros valores según tus preferencias */
     }
@@ -182,19 +182,15 @@ background: radial-gradient(circle, rgb(255, 202, 218) 10%, rgb(255, 91, 99) 60%
         }
     }
     .cantante {
-        animation: camibiar 8s infinite alternate;
+        animation: 4s infinite alternate;
         /* Ajusta la duración y otros valores según tus preferencias */
     }
 
-    @keyframes cambiar {
-        0% {
-            transform: scaleX(1);
-        }
-       
-        100% {
-            transform: scaleX(-1);
-        }
-    }
+    @keyframes cantar {
+  0% { transform: translateY(0) scaleX(1); }
+  50% { transform: translateY(-10px) scaleX(-1); }
+  100% { transform: translateY(0) scaleX(1) rotate(5deg); }
+}
     @media screen and (max-width: 768px) {
         h1 {
             font-size: 40px;
